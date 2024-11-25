@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://wx83.github.io/sitemap.xml

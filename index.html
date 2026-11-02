@@ -61,7 +61,14 @@
         background: linear-gradient(135deg, #e9ecef, #f8f9fa);
       }
       .pub-note { padding: 0 20px; margin: 0; color: #555; }
-      .pub-list { padding: 0 20px 0 48px; margin: 0; }
+      .pub-details { padding: 10px 20px 0 20px; }
+      .pub-toggle { list-style: none; cursor: pointer; display: inline-block; margin-bottom: 10px; }
+      .pub-toggle::-webkit-details-marker { display: none; }
+      .pub-toggle-btn { display: inline-block; padding: 6px 14px; border: 1px solid #999; border-radius: 6px; color: #333; font-weight: 600; }
+      .pub-toggle-btn:hover { background: #f0f0f0; }
+      .pub-details[open] .pub-toggle-btn::after { content: " ▲"; }
+      .pub-details:not([open]) .pub-toggle-btn::after { content: " ▼"; }
+      .pub-list { padding: 0 0 0 28px; margin: 0; }
       .pub-item { padding: 6px 0 10px 4px; }
       .pub-item::marker { color: #888; }
       .equal-contrib { font-size: 0.85em; }
@@ -126,7 +133,7 @@
                 <br>
                 Yuxiang Ma<span class="equal-contrib">*</span>, <strong>Weihan Xu<span class="equal-contrib">*</span></strong>, Pengfei Ye, Anna Mei, Ray Yuxin Song, Tingle Li, Haonan Chen, Yilun Du, Edward H. Adelson
                 <br>
-                <em>Do Robots Need World Models? Workshop @ CoRL 2026; under review at ICLR 2027</em>
+                <em>Preprint</em>, 2026
               </td>
             </tr>
 
@@ -139,7 +146,7 @@
                 <br>
                 <strong>Weihan Xu</strong>, Kan Jen Cheng, Koichi Saito, Jingyu Shi, Tingle Li, Yisi Liu, Liming Wang, Masato Ishii, Takashi Shibuya, Gopala Anumanchipalli, Paul Pu Liang
                 <br>
-                <em>Under review at ICLR 2027</em>
+                <em>Preprint</em>, 2026
               </td>
             </tr>
 
@@ -152,7 +159,7 @@
                 <br>
                 <strong>Weihan Xu<span class="equal-contrib">*</span></strong>, Kan Jen Cheng<span class="equal-contrib">*</span>, Koichi Saito, Jehanzeb Mirza, Tingle Li, Yisi Liu, Alexander Liu, Liming Wang, Masato Ishii, Takashi Shibuya, Yuki Mitsufuji, Gopala Anumanchipalli, Paul Pu Liang
                 <br>
-                <em>Under Review</em>, 2026
+                <em>Preprint</em>, 2026
                 <br>
                 <a href="https://arxiv.org/abs/2512.12875">arXiv</a>
                 /
@@ -169,7 +176,7 @@
                 <br>
                 Kan Jen Cheng<span class="equal-contrib">*</span>, <strong>Weihan Xu<span class="equal-contrib">*</span></strong>, Koichi Saito, Nicholas Lee, Yisi Liu, Jiachen Lian, Tingle Li, Alexander Liu, Fangneng Zhan, Masato Ishii, Takashi Shibuya, Paul Pu Liang, Gopala Anumanchipalli
                 <br>
-                <em>Under Review</em>, 2026
+                <em>Preprint</em>, 2026
               </td>
             </tr>
 
@@ -279,43 +286,38 @@
             </tr>
           </tbody></table>
 
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>All Publications</h2>
-              </td>
-            </tr>
-          </tbody></table>
+          <details class="pub-details">
+            <summary class="pub-toggle"><span class="pub-toggle-btn">Show all publications</span></summary>
           <ol class="pub-list" reversed>
                   <li class="pub-item">
                     <span class="papertitle">ACTS: Learning Visuo-Tactile World Models from Human Physical Interaction</span><br>
                     Yuxiang Ma<span class="equal-contrib">*</span>, <strong>Weihan Xu<span class="equal-contrib">*</span></strong>, Pengfei Ye, Anna Mei, Ray Yuxin Song, Tingle Li, Haonan Chen, Yilun Du, Edward H. Adelson<br>
-                    <em>Do Robots Need World Models? Workshop @ CoRL 2026; under review at ICLR 2027</em>
+                    <em>Preprint</em>, 2026
                   </li>
                   <li class="pub-item">
                     <span class="papertitle">AVIO: Learning to Add and Remove Sounding Objects in Audiovisual Scenes</span><br>
                     <strong>Weihan Xu</strong>, Kan Jen Cheng, Koichi Saito, Jingyu Shi, Tingle Li, Yisi Liu, Liming Wang, Masato Ishii, Takashi Shibuya, Gopala Anumanchipalli, Paul Pu Liang<br>
-                    <em>Under review at ICLR 2027</em>
+                    <em>Preprint</em>, 2026
                   </li>
                   <li class="pub-item">
                     <span class="papertitle">Tac-Bench: Benchmarking Diverse Tactile Manipulation and Multimodal World Models</span><br>
                     Peilin Wu, Zhiyi Li, <strong>Weihan Xu</strong>, Sam Gallaudet, Haonan Chen, Yilun Du<br>
-                    <em>Tactile for FM Workshop @ RSS 2026; under review at ICRA 2027</em> &nbsp;<a href="https://peilinwu.site/tac-bench.github.io/">project page</a>
+                    <em>RSS Workshop on Tactile Sensing for Robotic Foundation Models</em>, 2026 &nbsp;<a href="https://peilinwu.site/tac-bench.github.io/">project page</a>
                   </li>
                   <li class="pub-item">
                     <span class="papertitle">Clips2Story: Training-Free Video Storyboarding and Editing Using Multimodal Retrieval-Embedded Generation</span><br>
                     Junnuo Wang, <strong>Weihan Xu</strong>, <a href="https://hermandong.com/">Hao-Wen Dong</a><br>
-                    <em>Under Review</em>, 2026
+                    <em>Preprint</em>, 2026
                   </li>
                   <li class="pub-item">
                     <span class="papertitle">Schrödinger Audio-Visual Editor: Object-Level Audiovisual Removal</span><br>
                     <strong>Weihan Xu<span class="equal-contrib">*</span></strong>, Kan Jen Cheng<span class="equal-contrib">*</span>, Koichi Saito, Jehanzeb Mirza, Tingle Li, Yisi Liu, Alexander Liu, Liming Wang, Masato Ishii, Takashi Shibuya, Yuki Mitsufuji, Gopala Anumanchipalli, <a href="https://pliang279.github.io/">Paul Pu Liang</a><br>
-                    <em>Under Review</em>, 2026 &nbsp;<a href="https://arxiv.org/abs/2512.12875">arXiv</a> / <a href="https://wx83.github.io/SAVE-Audiovisual-Joint-Removal/">demo</a>
+                    <em>Preprint</em>, 2026 &nbsp;<a href="https://arxiv.org/abs/2512.12875">arXiv</a> / <a href="https://wx83.github.io/SAVE-Audiovisual-Joint-Removal/">demo</a>
                   </li>
                   <li class="pub-item">
                     <span class="papertitle">CAVE: Coherent Audio-Visual Emphasis via Schrödinger Bridge</span><br>
                     Kan Jen Cheng<span class="equal-contrib">*</span>, <strong>Weihan Xu<span class="equal-contrib">*</span></strong>, Koichi Saito, Nicholas Lee, Yisi Liu, Jiachen Lian, Tingle Li, Alexander Liu, Fangneng Zhan, Masato Ishii, Takashi Shibuya, <a href="https://pliang279.github.io/">Paul Pu Liang</a>, Gopala Anumanchipalli<br>
-                    <em>Under Review</em>, 2026
+                    <em>Preprint</em>, 2026
                   </li>
                   <li class="pub-item">
                     <span class="papertitle">REGen: Multimodal Retrieval-Embedded Generation for Long-to-Short Video Editing</span><br>
@@ -363,6 +365,7 @@
                     <em>IEEE Big Data Workshop on AI Music Generation</em>, 2023 &nbsp;<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10386311">paper</a>
                   </li>
           </ol>
+          </details>
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
             <tbody>
